@@ -1,0 +1,188 @@
+
+<html>
+<head>
+    
+    <title>Explorează Domeniile de Interes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .left-zone {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .right-zone {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explorează Domeniile Tale de Interes!</h1>
+        <nav>
+            <a href="#stiinta">Știință</a>
+            <a href="#arta">Artă</a>
+            <a href="#sport">Sport</a>
+            <a href="#tehnologie">Tehnologie</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="left-zone">
+            <h2>Descoperă lumea fascinantă a științei, artei, sportului și tehnologiei!</h2>
+            <p>Alege domeniul care te pasionează și învață lucruri noi în fiecare zi!</p>
+
+            <section id="stiinta">
+                <h3>Știință</h3>
+                <img src="img/stiinta.jpg" alt="Știință">
+                <p>Știința explică misterele naturii și universului. De la experimente la descoperiri spațiale, știința modelează viitorul.</p>
+                <ul>
+                    <li><a href="https://www.nasa.gov/" target="_blank">NASA - Descoperiri</a></li>
+                    <li><a href="https://www.scientificamerican.com/" target="_blank">Scientific American</a></li>
+                    <li><a href="https://www.ted.com/topics/science" target="_blank">TED Talks Știință</a></li>
+                </ul>
+            </section>
+
+            <section id="arta">
+                <h3>Artă</h3>
+                <img src="img/arta.jpg" alt="Artă">
+                <p>Arta este exprimarea creativității și emoțiilor. Prin pictură, muzică sau teatru, putem vedea lumea cu alți ochi.</p>
+                <ul>
+                    <li><a href="https://www.moma.org/" target="_blank">Muzeul MoMA</a></li>
+                    <li><a href="https://artsandculture.google.com/" target="_blank">Google Arts & Culture</a></li>
+                    <li><a href="https://www.tate.org.uk/art" target="_blank">Tate Art Gallery</a></li>
+                </ul>
+            </section>
+
+            <section id="sport">
+                <h3>Sport</h3>
+                <img src="img/sport.jpg" alt="Sport">
+                <p>Sportul dezvoltă atât corpul cât și caracterul. Activitățile sportive aduc sănătate, energie și spirit de echipă.</p>
+                <ul>
+                    <li><a href="https://www.olympic.org/" target="_blank">Comitetul Olimpic</a></li>
+                    <li><a href="https://www.uefa.com/" target="_blank">UEFA</a></li>
+                    <li><a href="https://www.runnersworld.com/" target="_blank">Runner's World</a></li>
+                </ul>
+            </section>
+
+            <section id="tehnologie">
+                <h3>Tehnologie</h3>
+                <img src="img/tehnologie.jpg" alt="Tehnologie">
+                <p>Tehnologia ne conectează și ne îmbunătățește viața. De la AI la internet, inovația este peste tot în jurul nostru.</p>
+                <ul>
+                    <li><a href="https://www.wired.com/" target="_blank">Wired</a></li>
+                    <li><a href="https://www.techcrunch.com/" target="_blank">TechCrunch</a></li>
+                    <li><a href="https://futureoflife.org/" target="_blank">Future of Life Institute</a></li>
+                </ul>
+            </section>
+
+            <button onclick="window.scrollTo(0, 0)">Înapoi sus</button>
+        </div>
+
+        <div class="right-zone">
+            <div class="card">
+                <img src="img/stiinta.jpg" alt="Știință">
+                <h3><a href="#stiinta">Știință</a></h3>
+            </div>
+            <div class="card">
+                <img src="img/arta.jpg" alt="Artă">
+                <h3><a href="#arta">Artă</a></h3>
+            </div>
+            <div class="card">
+                <img src="img/sport.jpg" alt="Sport">
+                <h3><a href="#sport">Sport</a></h3>
+            </div>
+            <div class="card">
+                <img src="img/tehnologie.jpg" alt="Tehnologie">
+                <h3><a href="#tehnologie">Tehnologie</a></h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
